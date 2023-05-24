@@ -1,40 +1,53 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol {
-  margin: 0;
-  padding: 0;
-}
+/* styles.css */
 
+/* Global Styles */
 body {
+  background-color: #800080; /* Purple background */
+  color: #333;
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  background-color: #f4f4f4;
-  color: #333;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #800080; /* Purple headings */
+}
+
+a {
+  color: #FFD700; /* Gold links */
+  text-decoration: none;
+}
+
+/* Header Styles */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #800080; /* Purple header background */
   padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #FFD700; /* Gold navigation background */
+  padding: 10px;
   text-align: center;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
-  text-align: center;
+  padding: 0;
 }
 
 nav li {
   display: inline-block;
-  margin: 10px;
+  margin: 0 10px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
+/* Main Content Styles */
 main {
   max-width: 800px;
   margin: 20px auto;
@@ -43,57 +56,11 @@ main {
   border-radius: 5px;
 }
 
+/* Footer Styles */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #FFD700; /* Gold footer background */
+  color: #333;
   padding: 10px;
   text-align: center;
 }
 
-h1, h2, h3 {
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-ul, ol {
-  margin-left: 20px;
-}
-
-/* Specific styles for different pages */
-
-/* About page */
-#about-content {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* Research page */
-.research-item {
-  margin-bottom: 20px;
-}
-
-/* Blog page */
-.blog-post {
-  margin-bottom: 40px;
-}
-
-.blog-post h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.blog-post p {
-  font-size: 14px;
-  color: #666;
-}
