@@ -12,6 +12,10 @@ h1 {
   color: #FFD700; /* Gold font color for h1 */
 }
 
+h2 {
+  color: #800080; /* Purple font color for h2 */
+}
+
 a {
   color: #FFD700; /* Black links */
   text-decoration: none;
