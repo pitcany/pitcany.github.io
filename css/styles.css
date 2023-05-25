@@ -8,12 +8,12 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #800080; /* Purple headings */
+h1 {
+  color: #FFD700; /* Gold font color for h1 */
 }
 
 a {
-  color: #FFD700; /* Gold links */
+  color: #FFD700; /* Black links */
   text-decoration: none;
 }
 
