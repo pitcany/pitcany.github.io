@@ -68,3 +68,17 @@ footer {
   text-align: center;
 }
 
+.pdf-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Controls the height of the container. Adjust as needed. */
+}
+
+.pdf-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
