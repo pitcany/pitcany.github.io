@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: #FFD700; /* Gold font color for h1 */
+  color: #8B0000; /* Red font color for h1 */
 }
 
 h2 {
@@ -35,7 +35,7 @@ header {
 
 /* Navigation Styles */
 nav {
-  background-color: #FFD700; /* Gold navigation background */
+  background-color: #8B0000; /* Red navigation background */
   padding: 10px;
   text-align: center;
 }
@@ -62,7 +62,7 @@ main {
 
 /* Footer Styles */
 footer {
-  background-color: #FFD700; /* Gold footer background */
+  background-color: #8B0000; /* Red footer background */
   color: #333;
   padding: 10px;
   text-align: center;
