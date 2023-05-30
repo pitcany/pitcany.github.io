@@ -28,6 +28,9 @@ a:focus,
   text-decoration: none;
   outline: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 button:focus {
   outline: none;
   border: none;
