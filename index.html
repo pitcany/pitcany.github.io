@@ -1,53 +1,805 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Doctor Yanni</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <style>
-        .responsive-image {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <title>Dr. Yannik Kashif Pitcan</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/f-icon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/custom-style.css" />
+    <link rel="stylesheet" type="text/css" href="sass/main.css" />
+  </head>
+  <body>
     <header>
-        <h1>Dr. Yannik Kashif Pitcan</h1>
+      <div class="topbar d-block">
+        <div class="container-lg">
+          <div class="row gy-2">
+            <div class="col-md-6">
+              <div class="d-flex gap-4 align-items-center tel-number">
+                <a href="tel:+3245698710"
+                  ><i class="fa fa-phone-alt" aria-hidden="true"></i>
+                  +3245698710</a
+                >
+                <a href="mailto:yannik@pitcan.me"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i>
+                  yannik@pitcan.me</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="d-flex gap-3 align-items-center s-icons justify-content-md-end"
+              >
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav d-block">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-lg">
+            <a class="navbar-brand" href="index.html"
+              >Dr. Yannik Kashif Pitcan</a
+            >
+            <button
+              class="navbar-toggler rounded-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="#a">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#b">Research</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#c">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#d">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#e">Consulting</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
+    <section class="hero-image d-block" id="a">
+      <div class="container-lg">
+        <div class="row gy-5 align-items-center">
+          <div class="col-md-6">
+            <div class="d-flex flex-column gap-4">
+              <h1>Dr. Yannik Kashif Pitcan</h1>
+              <div class="inline-block resume-btn">
+                <a href="images/Resume.pdf" target="_blank" class="btn-click"
+                  >Download Resume</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="doctor-image ofit">
+              <img src="images/user.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-block py-60 Intro-sec">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-block text-center mb-5">
+              <h1>
+                <span>Welcome!</span> My name is <span>Yannik</span> and I am a
+                <span>senior data scientist</span> working on
+                <span>artificial intelligence research</span> at an
+                <span>R&D consulting company</span>. Before that, I earned my
+                doctorate in statistics from UC Berkeley where I did research on
+                theoretical machine learning advised by Dr. Peter Bartlett. This
+                is a place where I share my thoughts on statistics, data
+                science, and anything else that I fancy. Feel free to explore
+                and learn more about me and my work!
+              </h1>
+            </div>
+            <div class="d-flex justify-content-center resume-btn">
+              <a href="images/Resume.pdf" target="_blank" class="btn-click"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-block py-60">
+      <div class="container-lg">
+        <div class="row gy-4">
+          <!-- <div class="col-md-6 pe-md-5">
+            <div class="d-block dr-img fulw">
+              <img src="images/image-dr.png" alt="image" />
+            </div>
+          </div> -->
+          <div class="d-block block-heading text-center mb-5">
+            <h3>Specialties</h3>
+          </div>
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <div class="d-flex flex-column gap-5 w-100">
+                <div
+                  class="d-flex flex-column flex-md-row gap-5 icon-sti-box justify-content-between"
+                >
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="flex-shrink-0">
+                      <div class="icon-st">
+                        <img src="images/icon3.png" alt="image" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h4>Econometrics</h4>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="flex-shrink-0">
+                      <div class="icon-st">
+                        <img src="images/icon5.png" alt="image" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h4>Time Series</h4>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="flex-shrink-0">
+                      <div class="icon-st">
+                        <img src="images/icon2.png" alt="image" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h4>Machine Learning</h4>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+                <div
+                  class="d-flex flex-column flex-md-row gap-5 icon-sti-box justify-content-around"
+                >
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="flex-shrink-0">
+                      <div class="icon-st">
+                        <img src="images/icon1.png" alt="image" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h4>Deep Learning</h4>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="flex-shrink-0">
+                      <div class="icon-st">
+                        <img src="images/icon4.png" alt="image" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h4>Cloud Computing</h4>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="d-flex flex-column gap-3 content-box text-center"> -->
+            <!-- <h3>My Background</h3>
+              <p>
+                I head up an AI research team. My background is primarily in
+                mathematical statistics, but now I work mostly in applied
+                machine learning. My other interests include soccer, karate, and
+                blackjack.
+              </p> -->
+            <!-- <h3 id="c">Specialiaties</h3> -->
+            <!-- <div class="d-block dr-img fulw">
+                <img src="images/gd.png" alt="image" />
+              </div> -->
+            <!-- <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column gap-3 text-start">
+                  <p><i class="fal fa-chevron-double-right"></i> Econometrics</p>
+                  <p><i class="fal fa-chevron-double-right"></i> Time Series</p>
+                  <p>
+                    <i class="fal fa-chevron-double-right"></i> Machine Learning
+                  </p>
+                  <p><i class="fal fa-chevron-double-right"></i> Deep Learning</p>
+                  <p>
+                    <i class="fal fa-chevron-double-right"></i> Cloud Computing
+                  </p>
+                </div>
+              </div> -->
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <!--<li><a href="about.html">About Me</a></li>-->
-            <li><a href="research.html">Research</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="consulting.html">Consulting</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h2>Introduction</h2>
-        <p>Welcome! My name is Yannik and I am a senior data scientist working on artificial intelligence research at an R&D consulting company. 
-           Before that, I earned my doctorate in statistics from UC Berkeley where I did research on theoretical machine learning.
-           This is a place where I share my thoughts on statistics, data science, and anything else that I fancy.
-            
-           Outside of work, I enjoy playing futsal, practicing kyokushin karate, and mastering blackjack.
-           </p>
-        
-        <h2>Specialties</h2>
-        <ul>
-            <li>Econometrics</li>
-            <li>Time Series</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Cloud Computing</li>
-        </ul>
-        <img src="355CFE5E-1D49-4AAB-B90F-1C73A435B923.jpeg" alt="Me" class="responsive-image" />
-    </main>
-
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
+            <!-- <h3>Past Research Projects</h3>
+              <div class="d-flex flex-column gap-2">
+                <p>
+                  <i class="fal fa-chevron-double-right"></i> Sample complexity
+                  guarantees in optimal transportation
+                </p>
+                <p>
+                  <i class="fal fa-chevron-double-right"></i> Elicitation of
+                  Bayesian priors
+                </p>
+                <p>
+                  <i class="fal fa-chevron-double-right"></i> Explainable AI for
+                  time series
+                </p>
+              </div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-block py-60 gbg" id="b">
+      <div class="container-lg">
+        <div class="row gy-5">
+          <div class="col-12">
+            <div class="d-block block-heading text-center">
+              <h3>Past Research Projects</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex flex-column gap-2 past-icon-content">
+              <div class="icon-box mb-3">
+                <i class="fal fa-thumbs-up"></i>
+              </div>
+              <p>Sample complexity guarantees in optimal transportation</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex flex-column gap-2 past-icon-content">
+              <div class="icon-box mb-3">
+                <i class="fal fa-poll-h"></i>
+              </div>
+              <p>Elicitation of Bayesian priors</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex flex-column gap-2 past-icon-content">
+              <div class="icon-box mb-3">
+                <i class="fal fa-clock"></i>
+              </div>
+              <p>Explainable AI for time series</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-block py-60" id="c">
+      <div class="container-lg">
+        <div class="row gy-5">
+          <div class="col-12">
+            <div class="d-block block-heading text-center">
+              <h3>Blog</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="d-flex flex-column gap-2 blog-box">
+              <div class="blog-img ofit">
+                <img src="images/image.png" alt="image" />
+              </div>
+              <div class="d-flex flex-column gap-2 py-3 px-4 vclip">
+                <h5>XAI</h5>
+                <p>Coming Soon</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="d-flex flex-column gap-2 blog-box">
+              <div class="blog-img ofit">
+                <img src="images/image.png" alt="image" />
+              </div>
+              <div class="d-flex flex-column gap-2 py-3 px-4 vclip">
+                <h5>My Experience With WyZant</h5>
+                <p>Coming Soon</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="d-flex flex-column gap-2 blog-box"
+            >
+              <div class="blog-img ofit">
+                <img src="images/image.png" alt="image" />
+              </div>
+              <div class="d-flex flex-column gap-2 py-3 px-4 vclip">
+                <h5>Stats vs. ML</h5>
+                <p>
+                  In the realm of data analysis, two disciplines often come to
+                  the forefront: Statistics and Machine Learning. While they
+                  share common ground, their approaches and applications diverge
+                  in fascinating ways. Statistics, a branch of mathematics, has
+                  been around for centuries. It focuses on making inferences
+                  from data. Statisticians often start with a hypothesis and use
+                  data to test this hypothesis.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-block py-60 gbg" id="d">
+      <div class="container-lg">
+        <div class="row gy-5">
+          <div class="col-12">
+            <div class="d-block block-heading text-center">
+              <h3>Resume</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-4 ">
+              <div class="d-block resume-heading-text">
+                <h2>Education</h2>
+              </div>
+              <div class="d-flex justify-content-end">
+                <div class="d-flex flex-column gap-2 text-box-resume rel">
+                  <span class="past-year"> 2013 </span>
+                  <span class="next-year"> 2021 </span>
+                  <div class="line-cri"></div>
+                  <span class="top-cri"></span>
+                  <span class="bottom-cri"></span>
+                  <h4>
+                    University of California, Berkeley Berkeley, California,
+                    United States
+                  </h4>
+                  <p>Ph.D. in Statistics 2013-2021</p>
+                  <p>
+                    Dissertation: An Assortment of Analyses for Optimal
+                    Transport Inspired by Domain Adaptation.
+                  </p>
+                  <p>
+                    Proved two new sample complexity bounds on the
+                    generalization errors of statistical methods using
+                    techniques from empirical process theory and proposed
+                    another type of distance measure called Sliced
+                    Multi-Marginal Wasserstein.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <div class="d-flex flex-column gap-2 text-box-resume rel">
+                  <span class="past-year"> 2007 </span>
+                  <span class="next-year"> 2011 </span>
+                  <div class="line-cri"></div>
+                  <span class="top-cri"></span>
+                  <span class="bottom-cri"></span>
+                  <h4>
+                    Harvard University Cambridge, Massachusetts, United States
+                  </h4>
+                  <p>A.B. cum laude with Honors in Mathematics 2007-2011</p>
+                  <p>
+                    Honors Thesis: Quantitative bounds for Markov chain
+                    convergence using logarithmic sobolev inequalities
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-4 ">
+              <div class="d-block resume-heading-text">
+                <h2>Skills</h2>
+              </div>
+              <div class="d-flex justify-content-end">
+                <div class="d-flex flex-column gap-2 text-box-resume rel">
+                  <!-- <span class="past-year"> 2013 </span>
+                  <span class="next-year"> 2021 </span> -->
+                  <div class="line-cri"></div>
+                  <span class="top-cri"></span>
+                  <span class="bottom-cri"></span>
+                  <!-- <h4>
+                    University of California, Berkeley Berkeley, California,
+                    United States
+                  </h4> -->
+                  <p>R, Python, Spark, SQL, C/C++, Matlab, Scala
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="d-flex flex-column gap-4 ">
+                <div class="d-block resume-heading-text">
+                  <h2>Other Specialties</h2>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <div class="d-flex flex-column gap-2 text-box-resume rel">
+                    <!-- <span class="past-year"> 2013 </span>
+                    <span class="next-year"> 2021 </span> -->
+                    <div class="line-cri"></div>
+                    <span class="top-cri"></span>
+                    <span class="bottom-cri"></span>
+                    <!-- <h4>
+                      University of California, Berkeley Berkeley, California,
+                      United States
+                    </h4> -->
+                    <p>Time series, survival analysis, regression modeling
+                    </p>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex flex-column gap-4">
+              <div class="d-block resume-heading-text">
+                <h2>Professional Experience</h2>
+              </div>
+              <div class="d-flex justify-content-end">
+                <div class="d-flex flex-column gap-2 text-box-resume rel">
+                  <span class="past-year"> 2022 </span>
+                  <span class="next-year"> Pre.</span>
+                  <div class="line-cri"></div>
+                  <span class="top-cri"></span>
+                  <span class="bottom-cri"></span>
+                  <h4>PerformanceStar Santa Clara, California</h4>
+                  <p>Software Engineer November 2022 – Present</p>
+                  <p>
+                    Core contributor to the XAI (explainable AI) project that
+                    assists humans in understanding and interpreting the
+                    decisions made by AI.
+                  </p>
+                  <p>Built out regression library for XAI.</p>
+                  <p>
+                    Also developed a method for estimating Shapley values in
+                    time series data.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <div class="d-flex flex-column gap-2 text-box-resume rel">
+                  <span class="past-year">2022 </span>
+                  <span class="next-year">2022 </span>
+                  <div class="line-cri"></div>
+                  <span class="top-cri"></span>
+                  <span class="bottom-cri"></span>
+                  <h4>Quantfury LLC Chicago, Illinois</h4>
+                  <p>Machine Learning Researcher Jan 2022 – June 2022</p>
+                  <p>
+                    Lead data engineering as well as modeling activities and
+                    effectively manage research program. Design survival
+                    analysis models and accurately assess key factors for trades
+                    to support overall trading strategy. Develop ML modules,
+                    algorithms, and analytical solutions as per research
+                    problems. Conceptualize required data pipelines in support
+                    of machine learning modules and deploy models in production
+                    environment for large-scale apps. Source, cleanse, and
+                    analyze large disparate data sets and devise as well as
+                    maintain data science best practices across all departments.
+                    Collaborate with cross-functional teams to build
+                    comprehensive solutions.
+                  </p>
+                  <p>
+                    Created survival analysis models to analyze driving factors
+                    for trades closing ultimately as part of a larger trading
+                    strategy.
+                  </p>
+                </div>
+              </div>
+            <div class="d-flex justify-content-end">
+                <div class="d-flex flex-column gap-2 text-box-resume rel">
+                  <span class="past-year"> 2020 </span>
+                  <span class="next-year">2021 </span>
+                  <div class="line-cri"></div>
+                  <span class="top-cri"></span>
+                  <span class="bottom-cri"></span>
+                  <h4>Walgreens Boots Alliance Chicago, Illinois</h4>
+                  <p>
+                    Senior Algorithms and Engineering Scientist Sept 2020 – Dec
+                    2021
+                  </p>
+                  <p>
+                    Managed Big Data project by effectively collaborating with
+                    RX analytics and “Return to Stock” teams. Supported “Return
+                    to Stock” project by developing full model pipelines for
+                    data engineering/analytics in Azure Databricks. Built and
+                    managed algorithms during product development and support
+                    integration into applications. Researched into potential
+                    improvements to further optimize algorithm efficiency.
+                  </p>
+                  <p>
+                    Created feature store that reduced time other data
+                    scientists across the company spent on feature engineering
+                    by 30 percent based on metrics.
+                  </p>
+                  <p>
+                    Rewrote model pipelines in Pyspark to run on distributed
+                    cloud clusters instead of on premises and improved
+                    scalability for the Return to Stock project so models could
+                    run on workloads ten times larger. Recognized company-wide
+                    for work done.
+                  </p>
+                  <p>
+                    Revamped hiring processes and built outreach program with UC
+                    Berkeley to recruit under-represented minorities in STEM for
+                    careers at Walgreens.
+                  </p>
+                </div>
+              </div> 
+            <div class="d-flex justify-content-end">
+                <div class="d-flex flex-column gap-2 text-box-resume rel">
+                  <span class="past-year">2012 </span>
+                  <span class="next-year">2013 </span>
+                  <div class="line-cri"></div>
+                  <span class="top-cri"></span>
+                  <span class="bottom-cri"></span>
+                  <h4>Epic Systems
+                    Madison, Wisconsin</h4>
+                  <p>
+                    Business Intelligence Developer July 2012 – Aug 2013
+                  </p>
+                  <p>
+                    Designed business intelligence solutions as a part of “Beacon Oncology Research and Development” team.
+                  </p>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <!-- <div class="col-12">
+            <div class="d-flex justify-content-center resume-btn">
+              <a href="images/Resume.pdf" target="_blank" class="btn-click"
+                >Download Resume</a
+              >
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+   <section class="d-block py-60" id="e">
+      <div class="container-lg">
+        <div class="row gy-4">
+          <div class="col-12">
+            <div class="d-block block-heading text-center">
+              <h3>Consulting</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex flex-column gap-2 content-box">
+              <h3>Overview</h3>
+              <p>
+                I tutor students in statistics at all levels and also do data
+                science consulting on the side with small businesses. I have
+                aided over sixty clients to better results, whether it be
+                optimizing data science practices in business or understanding
+                the basics of Markov processes. References are available upon
+                request.
+              </p>      
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex flex-column gap-2 content-box">
+              <h3>Scheduling</h3>
+              <p>
+                If you would like to schedule a brief consultation call, you may
+                email me at yannik@pitcan.me and then we can have a 15 minute
+                Zoom call where I assess whether we'd be a good fit!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- <section class="d-block py-60 acc-box" id="f">
+      <div class="container-lg">
+        <div class="row gy-5">
+          <div class="col-12">
+            <div class="d-block block-heading">
+              <h3>Blog</h3>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex flex-column gap-3 box-content-text">
+              <h3>XAI</h3>
+              <p>I'll fill this in soon</p>
+              <h3>My Experience With WyZant</h3>
+              <p>It wasn't worth it.</p>
+              <h3>Stats vs. ML</h3>
+              <p>
+                In the realm of data analysis, two disciplines often come to the
+                forefront: Statistics and Machine Learning. While they share
+                common ground, their approaches and applications diverge in
+                fascinating ways. Statistics, a branch of mathematics, has been
+                around for centuries. It focuses on making inferences from data.
+                Statisticians often start with a hypothesis and use data to test
+                this hypothesis. They are interested in understanding the
+                underlying data distribution and the relationships between
+                variables. The primary goal is inference, deriving insights and
+                conclusions about the population from which the data was
+                sampled. On the other hand, Machine Learning, a subset of
+                artificial intelligence, is a relatively new field. It focuses
+                on creating algorithms that improve their performance or make
+                accurate predictions based on the data they process. Machine
+                learning models often prioritize predictive accuracy over
+                interpretability. The primary goal is prediction, using patterns
+                in the data to forecast future outcomes, often without a deep
+                understanding of the underlying causal relationships. While the
+                two fields have different emphases, they are not mutually
+                exclusive. In fact, they often overlap and complement each
+                other. Many machine learning techniques are grounded in
+                statistical theory, while statistics has evolved to incorporate
+                machine learning methods. In essence, both statistics and
+                machine learning provide valuable tools for understanding data.
+                The choice between them depends on the problem at hand. If the
+                goal is to understand underlying patterns and relationships in
+                the data, statistics might be the way to go. If the goal is to
+                make accurate predictions from complex datasets, machine
+                learning could be a better choice. In many real-world scenarios,
+                a blend of both disciplines often yields the best results.
+              </p>
+              <h3>Overview</h3>
+              <p>
+                I tutor students in statistics at all levels and also do data
+                science consulting on the side with small businesses. I have
+                aided over sixty clients to better results, whether it be
+                optimizing data science practices in business or understanding
+                the basics of Markov processes. References are available upon
+                request.
+              </p>
+              <h3>Scheduling</h3>
+              <p>
+                If you would like to schedule a brief consultation call, you may
+                email me at yannik@pitcan.me and then we can have a 15 minute
+                Zoom call where I assess whether we'd be a good fit!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+   <footer>
+      <div class="d-block py-60">
+        <div class="container-lg">
+          <div class="row gy-3">
+            <div class="col-12">
+              <div
+              class="d-flex gap-3 align-items-center s-icons justify-content-center"
+            >
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+            <div class="col-12 text-center">
+              <p>
+                &copy; copyright 2023. all rights reserved. Dr. Yannik Kashif
+                Pitcan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Stats vs. ML
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column gap-2">
+              <p>
+                In the realm of data analysis, two disciplines often come to the
+                forefront: Statistics and Machine Learning. While they share
+                common ground, their approaches and applications diverge in
+                fascinating ways. Statistics, a branch of mathematics, has been
+                around for centuries. It focuses on making inferences from data.
+                Statisticians often start with a hypothesis and use data to test
+                this hypothesis. They are interested in understanding the
+                underlying data distribution and the relationships between
+                variables. The primary goal is inference, deriving insights and
+                conclusions about the population from which the data was
+                sampled. On the other hand, Machine Learning, a subset of
+                artificial intelligence, is a relatively new field. It focuses
+                on creating algorithms that improve their performance or make
+                accurate predictions based on the data they process. Machine
+                learning models often prioritize predictive accuracy over
+                interpretability. The primary goal is prediction, using patterns
+                in the data to forecast future outcomes, often without a deep
+                understanding of the underlying causal relationships. While the
+                two fields have different emphases, they are not mutually
+                exclusive. In fact, they often overlap and complement each
+                other. Many machine learning techniques are grounded in
+                statistical theory, while statistics has evolved to incorporate
+                machine learning methods. In essence, both statistics and
+                machine learning provide valuable tools for understanding data.
+                The choice between them depends on the problem at hand. If the
+                goal is to understand underlying patterns and relationships in
+                the data, statistics might be the way to go. If the goal is to
+                make accurate predictions from complex datasets, machine
+                learning could be a better choice. In many real-world scenarios,
+                a blend of both disciplines often yields the best results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $(".navbar-nav a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              5000,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+    <script>
+      jQuery(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 1) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

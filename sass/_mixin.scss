@@ -1,0 +1,27 @@
+@mixin br($value) {
+  -webkit-border-radius: $value !important;
+  -moz-border-radius: $value !important;
+  border-radius: $value !important;
+}
+@mixin ts($value) {
+  -webkit-transition: all $value ease;
+  -moz-transition: all $value ease;
+  -o-transition: all $value ease;
+  -ms-transition: all $value ease;
+  transition: all $value ease;
+}
+
+@mixin bf {
+  &:before {
+    position: absolute;
+    content: "";
+    @content;
+  }
+}
+@mixin af {
+  &:after {
+    position: absolute;
+    content: "";
+    @content;
+  }
+}
