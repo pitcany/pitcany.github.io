@@ -17,9 +17,9 @@
         <div class="row gy-2">
           <div class="col-md-6">
             <div class="d-flex gap-4 align-items-center tel-number">
-              <a href="tel:+3245698710"
+              <a href="tel:+4072678890"
                 ><i class="fa fa-phone-alt" aria-hidden="true"></i>
-                +3245698710 346</a
+                +4072678890</a
               >
               <a href="mailto:yannik@pitcan.me"
                 ><i class="fa fa-envelope" aria-hidden="true"></i>
