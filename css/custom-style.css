@@ -111,3 +111,12 @@ button {
   margin-left: -10px;
   transform: translateY(-50%);
 }
+
+.blog_slider .blog{
+  height: 480px !important;
+}
+
+.slick-prev, .slick-next{
+  font-size: 20px !important;
+  color: #000 !important;
+}
