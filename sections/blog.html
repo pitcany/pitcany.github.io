@@ -30,11 +30,7 @@
         </a>
       </div>
       <div class="col-md-4">
-        <a
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          class="d-flex flex-column gap-2 blog-box"
-        >
+        <a data-id="blog3" class="d-flex flex-column gap-2 blog-box" onclick="openBlog(this)">
           <div class="blog-img ofit">
             <img src="images/image.png" alt="image" />
           </div>
@@ -55,3 +51,59 @@
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-blog3" tabindex="-1" aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          Stats vs. ML
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column gap-2">
+          <p>
+            In the realm of data analysis, two disciplines often come to the
+            forefront: Statistics and Machine Learning. While they share
+            common ground, their approaches and applications diverge in
+            fascinating ways. Statistics, a branch of mathematics, has been
+            around for centuries. It focuses on making inferences from data.
+            Statisticians often start with a hypothesis and use data to test
+            this hypothesis. They are interested in understanding the
+            underlying data distribution and the relationships between
+            variables. The primary goal is inference, deriving insights and
+            conclusions about the population from which the data was
+            sampled. On the other hand, Machine Learning, a subset of
+            artificial intelligence, is a relatively new field. It focuses
+            on creating algorithms that improve their performance or make
+            accurate predictions based on the data they process. Machine
+            learning models often prioritize predictive accuracy over
+            interpretability. The primary goal is prediction, using patterns
+            in the data to forecast future outcomes, often without a deep
+            understanding of the underlying causal relationships. While the
+            two fields have different emphases, they are not mutually
+            exclusive. In fact, they often overlap and complement each
+            other. Many machine learning techniques are grounded in
+            statistical theory, while statistics has evolved to incorporate
+            machine learning methods. In essence, both statistics and
+            machine learning provide valuable tools for understanding data.
+            The choice between them depends on the problem at hand. If the
+            goal is to understand underlying patterns and relationships in
+            the data, statistics might be the way to go. If the goal is to
+            make accurate predictions from complex datasets, machine
+            learning could be a better choice. In many real-world scenarios,
+            a blend of both disciplines often yields the best results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
