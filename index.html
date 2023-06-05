@@ -1,6 +1,6 @@
 <html lang="en">
   <head>
-    <title>Dr. Yannik Pitcan</title>
+    <title>Dr. Yannik Kashif Pitcan</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="images/f-icon.png" />
@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   </head>
 <body>
 <include src="./inc/header.html"></include>
@@ -98,5 +99,14 @@ jQuery(document).ready(function ($) {
   });
 });
 </script>
+
+<script type="text/x-mathjax-config">
+setTimeout(function(){
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	});
+},2000);
+</script>
+
 </body>
 </html>

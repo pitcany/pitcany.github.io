@@ -113,7 +113,8 @@ button {
 }
 
 .blog_slider .blog{
-  height: 480px !important;
+  height: 580px !important;
+  padding-bottom: 30px !important;
 }
 
 .slick-prev, .slick-next{
