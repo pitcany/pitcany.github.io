@@ -166,6 +166,14 @@
           </div>
           
           <li><strong>Concentration Bounds for Martingales:</strong> Concentration bounds for martingales are specialized concentration inequalities used to analyze sequences of random variables. They provide bounds on the deviations of martingale differences, which are central to understanding the behavior of dynamic stochastic processes.</li>
+          <div class="proof">
+          <h4>Proof:</h4>
+          <p>A martingale is a sequence of random variables \((X_1, X_2, \ldots, X_n)\) such that for each \(i\), \(\mathbb{E}[X_i | X_1, X_2, \ldots, X_{i-1}] = X_{i-1}\).</p>
+          <p>Concentration bounds for martingales are derived by applying the Azuma-Hoeffding inequality, which is a specialized form of Hoeffding's inequality for martingales.</p>
+          <p>Let \((X_1, X_2, \ldots, X_n)\) be a martingale with respect to a filtration \((\mathcal{F}_1, \mathcal{F}_2, \ldots, \mathcal{F}_n)\). Consider the differences \(Y_i = X_i - X_{i-1}\) for \(i = 2, 3, \ldots, n\).</p>
+          <p>The martingale property implies that \(\mathbb{E}[Y_i | \mathcal{F}_{i-1}] = 0\) for each \(i\). Additionally, if \(|Y_i| \leq c_i\) almost surely for each \(i\), then we have the following concentration bound:</p>
+          <p>\(P\left(\sum_{i=2}^{n} Y_i \geq t\right) \leq e^{-\frac{{t^2}}{{2\sum_{i=2}^{n} c_i^2}}}\).</p>
+          <p>This bound provides exponential tail decay for the sum of martingale differences, allowing us to analyze the concentration properties of dynamic stochastic processes.</p>
         </ul>
         
         <h3>Applications of Concentration Inequalities</h3>
