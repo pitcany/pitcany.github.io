@@ -21,13 +21,14 @@
         </a>
       </div>
       <div class="col-md-4 blog p-3">
-        <a href="#" class="d-flex flex-column gap-2 blog-box">
+        <!-- <a href="#" class="d-flex flex-column gap-2 blog-box"> -->
+        <a data-id="blog2" class="d-flex flex-column gap-2 blog-box" onclick="openBlog(this)">
           <div class="blog-img ofit">
             <img src="images/image.png" alt="image" />
           </div>
           <div class="d-flex flex-column gap-2 py-3 px-4 vclip">
-            <h5>My Experience With WyZant</h5>
-            <p>Coming Soon</p>
+            <h5>Unraveling Patterns Over Time: An Introduction to Time Series Analysis</h5>
+            <p>Time series analysis is a powerful tool for understanding and forecasting data that evolves over time. From stock prices and weather patterns to economic indicators and social media trends, time series data can provide valuable insights into underlying patterns and trends. In this blog post, we will explore the fundamentals of time series analysis, key concepts, and popular modeling techniques to help you make sense of time-dependent data.</p>
           </div>
         </a>
       </div>
@@ -57,6 +58,114 @@
 </section>
 
 <!-- Modal -->
+
+<div class="modal fade" id="modal-blog2" tabindex="-1" aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          Unraveling Patterns Over Time: An Introduction to Time Series Analysis
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column gap-2">
+        <p>Time series analysis is a powerful tool for understanding and forecasting data that evolves over time. From stock prices and weather patterns to economic indicators and social media trends, time series data can provide valuable insights into underlying patterns and trends. In this blog post, we will explore the fundamentals of time series analysis, key concepts, and popular modeling techniques to help you make sense of time-dependent data.</p>
+
+        <h3>What is a Time Series?</h3>
+        <p>A time series is a sequence of data points collected at regular intervals over time. It could be daily stock prices, monthly sales figures, or hourly temperature readings. The key characteristic of time series data is its temporal ordering, where each observation is influenced by previous values and potentially exhibits trends, seasonality, and other time-dependent patterns.</p>
+
+        <h3>Key Concepts in Time Series Analysis</h3>
+        <h4>Trend Analysis</h4>
+        <p>Trends represent the long-term movement of a time series. They can be upward, indicating growth, or downward, suggesting a decline. Identifying trends is crucial for understanding underlying patterns and making predictions.</p>
+
+        <h4>Seasonality and Periodicity</h4>
+        <p>Seasonality refers to patterns that repeat at fixed intervals, such as weekly, monthly, or yearly cycles. Identifying and modeling seasonality is essential to capture recurring patterns and make accurate forecasts.</p>
+
+        <h4>Stationarity</h4>
+        <p>A stationary time series exhibits constant mean (\(\mu\)), variance (\(\sigma^2\)), and autocovariance (\(\gamma\)) over time. Formally, a time series \(\{X_t\}\) is stationary if it satisfies the following conditions:</p>
+
+        <ul>
+          <li>Constant mean: \(E(X_t) = \mu\) for all \(t\).</li>
+          <li>Constant variance: \(Var(X_t) = \sigma^2\) for all \(t\).</li>
+          <li>Constant autocovariance: \(Cov(X_t, X_{t+k}) = \gamma(k)\) for all \(t\) and a lag \(k\).</li>
+        </ul>
+
+        <p>Stationarity simplifies analysis by making patterns easier to interpret and model. Techniques like differencing can be applied to transform non-stationary data into stationary.</p>
+
+        <h4>Autocorrelation</h4>
+        <p>Autocorrelation measures the correlation between a time series and its lagged values. Understanding autocorrelation helps identify patterns and dependencies between past and current observations.</p>
+        
+        <h4>Time Series Decomposition</h4>
+        <p>Decomposing a time series separates it into its constituent components: trend, seasonality, and residuals (random fluctuations). The additive decomposition model expresses a time series \(Y_t\) as the sum of its trend (\(T_t\)), seasonal component (\(S_t\)), and residuals (\(R_t\)):</p>
+        
+        <p>\[Y_t = T_t + S_t + R_t\]</p>
+        
+        <p>The multiplicative decomposition model expresses the time series as the product of its components:</p>
+        
+        <p>\[Y_t = T_t \times S_t \times R_t\]</p>
+        
+        <p>Decomposition provides insights into individual patterns and helps analyze their contributions to the overall time series behavior.</p>
+        
+        <h3>Time Series Models</h3>
+        
+        <h4>Moving Average (MA) Models</h4>
+        <p>MA models capture short-term dependencies in a time series using a moving average of past observations. An MA(q) model is defined as:</p>
+        
+        <p>\[X_t = \mu + \varepsilon_t + \theta_1\varepsilon_{t-1} + \theta_2\varepsilon_{t-2} + \ldots + \theta_q\varepsilon_{t-q}\]</p>
+        
+        <p>where \(X_t\) is the observed value at time \(t\), \(\mu\) is the mean, \(\varepsilon_t\) is the white noise error term, and \(\theta_1, \theta_2, \ldots, \theta_q\) are the parameters of the model.</p>
+        
+        <h4>Autoregressive (AR) Models</h4>
+        <p>AR models capture the relationship between a time series and its past values. An AR(p) model of order \(p\) is defined as:</p>
+        
+        <p>\[X_t = \phi_0 + \phi_1X_{t-1} + \phi_2X_{t-2} + \ldots + \phi_pX_{t-p} + \varepsilon_t\]</p>
+        
+        <p>where \(\phi_0, \phi_1, \ldots, \phi_p\) are the parameters of the model.</p>
+        
+        <h4>Autoregressive Moving Average (ARMA) Models</h4>
+        <p>ARMA models combine the features of MA and AR models. An ARMA(p, q) model is defined as:</p>
+        
+        <p>\[X_t = \phi_0 + \phi_1X_{t-1} + \phi_2X_{t-2} + \ldots + \phi_pX_{t-p} + \varepsilon_t + \theta_1\varepsilon_{t-1} + \theta_2\varepsilon_{t-2} + \ldots + \theta_q\varepsilon_{t-q}\]</p>
+        
+        <p>where \(\phi_0, \phi_1, \ldots, \phi_p\) and \(\theta_1, \theta_2, \ldots, \theta_q\) are the parameters of the model.</p>
+        
+        <h4>Autoregressive Integrated Moving Average (ARIMA) Models</h4>
+        <p>ARIMA models handle non-stationary time series by differencing them to achieve stationarity. An ARIMA(p, d, q) model is defined as:</p>
+        
+        <p>\[\Delta^dX_t = \phi_0 + \phi_1\Delta^dX_{t-1} + \phi_2\Delta^dX_{t-2} + \ldots + \phi_p\Delta^dX_{t-p} + \varepsilon_t + \theta_1\varepsilon_{t-1} + \theta_2\varepsilon_{t-2} + \ldots + \theta_q\varepsilon_{t-q}\]</p>
+        
+        <p>where \(\Delta^dX_t\) represents the differencing of order \(d\) of the time series.</p>
+        
+        <h3>Forecasting with Time Series Analysis</h3>
+        
+        <p>Forecasting involves predicting future values based on historical patterns. Techniques like simple moving average, exponential smoothing, and ARIMA-based forecasting are commonly used for time series forecasting. These methods help anticipate future trends, make informed decisions, and plan effectively.</p>
+        
+        <h3>Conclusion</h3>
+        
+        <p>Time series analysis empowers us to unravel hidden patterns and make accurate predictions in time-dependent data. By understanding concepts like trends, seasonality, stationarity, and using models like AR, MA, ARMA, and ARIMA, we can gain valuable insights and make informed decisions based on historical patterns. Whether you're analyzing financial data, weather patterns, or customer behavior, mastering time series analysis opens up a world of possibilities for data-driven decision-making.</p>
+        
+        <p>Take the time to explore time series analysis further, experiment with different techniques, and apply them to your own data. With practice, you'll become adept at uncovering the secrets hidden within the flow of time.</p>
+        
+        <h3>References</h3>
+        
+        <ul>
+          <li>Hyndman, R.J., & Athanasopoulos, G. (2018). Forecasting: Principles and Practice. OTexts: Melbourne, Australia.</li>
+          <li>Brockwell, P.J., & Davis, R.A. (2016). Introduction to Time Series and Forecasting. Springer.</li>
+        </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="modal fade" id="modal-blog3" tabindex="-1" aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-scrollable">
